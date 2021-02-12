@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Whole page -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/station_pag"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/station_pag">
+    <!-- Top layout-->
+    <RelativeLayout
+        android:id="@+id/gradients_s"
+        android:layout_width="0dp"
+        android:layout_height="126dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+
+        android:background="@drawable/title">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="17dp"
+            android:text="Station N"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/bus_informa"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:text="@string/bus_informa"
+            android:textSize="18sp"
+
+            android:alpha="0.8"
+            android:letterSpacing="-0.03"
+            android:textColor="#FFFFFF"
+            android:gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            />
+        <TextView
+            android:id="@+id/popular_tim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:alpha="0.8"
+            android:gravity="bottom"
+            android:text="@string/popular_time"
+            android:textColor="#99FFFF"
+            android:textSize="18dp" />
+        <Button
+            android:id="@+id/Button_populartime"
+            android:layout_width="178dp"
+            android:layout_height="38dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="-2dp"
+            android:background="#00000000"
+            style="?android:attr/borderlessButtonStyle">
+
+        </Button>
+
+        <Button
+            android:id="@+id/Button_bus_informa"
+            android:layout_width="205dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="206dp"
+            android:layout_marginRight="206dp"
+            android:layout_marginBottom="-2dp"
+            android:background="#00000000"
+            style="?android:attr/borderlessButtonStyle">
+
+        </Button>
+
+        <Button
+            android:id="@+id/arrow_left"
+            android:layout_width="40dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="17dp"
+            android:background="@mipmap/arrow_left"
+            app:backgroundTint="#FFFFFF"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/map"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="18dp"
+            android:background="@mipmap/location"
+            app:backgroundTint="#FFFFFF"
+            style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+
+    <!-- Body layout -->
+    <RelativeLayout
+        android:id="@+id/recommand_s"
+        android:layout_width="match_parent"
+        android:layout_height="532dp"
+        android:layout_below="@+id/gradients_s"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/body">
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@mipmap/flow"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

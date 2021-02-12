@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">bus_app</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="terrain_map">terrain_map</string>
+    <string name="satellite_map">satellite_map</string>
+    <string name="hybrid_map">hybrid_map</string>
+    <string name="normal_map">normal_map</string>
+    <string name="station_a">Station A</string>
+    <string name="station_b">Station B</string>
+    <string name="title_activity_line1">Line1</string>
+    <string name="action_settings">Settings</string>
+    <string name="bus_informa">Bus Information</string>
+    <string name="popular_time">Popular Time</string>
+    <string name="to_station_">To Station A</string>
+    <string name="to_station_2">To Station C</string>
+    <string name="line_number1">1</string>
+    <string name="line_number2">3</string>
+    <string name="line_time1">Depart at 8:35</string>
+    <string name="line_time2">Depart at 8:41</string>
+    <string name="line_time3">Depart at 8:45</string>
+    <string name="line_1">Line 1</string>
+
+
+</resources>

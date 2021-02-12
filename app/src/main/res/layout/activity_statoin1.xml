@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Whole page -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/station_pag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <!-- Top layout-->
+    <RelativeLayout
+        android:id="@+id/gradients_s"
+        android:layout_width="match_parent"
+        android:layout_height="126dp"
+        android:background="@drawable/title">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="17dp"
+            android:gravity="center_horizontal"
+            android:text="Station N"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/bus_informa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bus_informa"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:letterSpacing="-0.03"
+            android:textColor="#FFFFFF"
+            android:gravity="bottom"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            />
+
+        <TextView
+            android:id="@+id/popular_tim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="10dp"
+            android:alpha="0.8"
+            android:gravity="bottom"
+            android:text="@string/popular_time"
+            android:textColor="#99FFFF"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/Button_populartime"
+            android:layout_width="178dp"
+            android:layout_height="38dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="-2dp"
+            android:background="#00000000"
+            style="?android:attr/borderlessButtonStyle">
+
+        </Button>
+
+        <Button
+            android:id="@+id/arrow_left"
+            android:layout_width="40dp"
+            android:layout_height="26dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="17dp"
+            android:background="@mipmap/arrow_left"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/map"
+            android:layout_width="30dp"
+            android:layout_height="28dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="18dp"
+            android:background="@mipmap/location"
+            style="?android:attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+
+    <!-- Body layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gradients_s">
+    <LinearLayout
+        android:id="@+id/recommand_s"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#F3F3F3">
+
+        <!-- Information component layout-->
+        <RelativeLayout
+            android:id="@+id/component_1"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_backgroundsw"
+            android:elevation="3dp"
+            android:translationZ="10dp"
+            android:translationY="5dp">
+            <Button
+                android:id="@+id/Button_bus1"
+                android:layout_width="390dp"
+                android:layout_height="90dp"
+                android:background="#00000000">
+            </Button>
+                <TextView
+                    android:id="@+id/to_station_"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="55dp"
+                    android:gravity="center_vertical"
+                    android:letterSpacing="-0.03"
+                    android:text="@string/to_station_"
+                    android:textColor="#000000"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/rectangle_2"
+                    android:layout_width="24dp"
+                    android:layout_height="18dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="17dp"
+                    android:background="@drawable/button_line1" />
+
+                <TextView
+                    android:id="@+id/line_number1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:letterSpacing="-0.03"
+                    android:text="@string/line_number1"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/line_time1"
+                android:layout_width="122dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="260dp"
+                android:layout_marginTop="0dp"
+                android:gravity="center_vertical"
+                android:text="@string/line_time1"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/component_2"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_backgroundsw"
+            android:elevation="3dp"
+            android:translationZ="10dp"
+            android:translationY="5dp">
+            <Button
+                android:id="@+id/Button_bus2"
+                android:layout_width="390dp"
+                android:layout_height="90dp"
+                android:background="#00000000">
+            </Button>
+            <TextView
+                android:id="@+id/to_station_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="55dp"
+                android:gravity="center_vertical"
+                android:letterSpacing="-0.03"
+                android:text="@string/to_station_2"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/rectangle_4"
+                android:layout_width="24dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/button_line3" />
+
+            <TextView
+                android:id="@+id/line_number2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="25dp"
+                android:gravity="center_vertical"
+                android:letterSpacing="-0.03"
+                android:text="@string/line_number2"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/line_time2"
+                android:layout_width="118dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="260dp"
+                android:gravity="center_vertical"
+                android:text="@string/line_time2"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/component_3"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_backgroundsw"
+            android:layout_marginBottom="300dp"
+            android:elevation="3dp"
+            android:translationZ="10dp"
+            android:translationY="5dp">
+            <Button
+                android:id="@+id/Button_bus3"
+                android:layout_width="390dp"
+                android:layout_height="90dp"
+                android:background="#00000000">
+            </Button>
+            <TextView
+                android:id="@+id/to_station_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="55dp"
+                android:gravity="center_vertical"
+                android:letterSpacing="-0.03"
+                android:text="@string/to_station_"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                />
+            <View
+                android:id="@+id/rectangle_6"
+                android:layout_width="24dp"
+                android:layout_height="18dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="17dp"
+                android:background="@drawable/button_line1" />
+            <TextView
+                android:id="@+id/line_number3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/line_number1"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:letterSpacing="-0.03"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/line_time3"
+                android:layout_width="117dp"
+                android:layout_height="89dp"
+                android:layout_marginLeft="260dp"
+                android:gravity="center_vertical"
+                android:text="@string/line_time3"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+
+        
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

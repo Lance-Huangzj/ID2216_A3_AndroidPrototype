@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/line1_a_"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/line1_a_">
+
+    <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/gradients_s"
+            android:layout_width="0dp"
+            android:layout_height="125dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/title"
+            android:elevation="4dp">
+            <RelativeLayout
+                android:layout_height="wrap_content"
+                android:layout_width="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                >
+            <!-- Line 1 -->
+                <TextView
+                    android:id="@+id/line_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="17dp"
+                    android:text="@string/line_1"
+                    android:textSize="24sp"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    />
+
+            <!-- arrow_left -->
+                <Button
+                    android:id="@+id/arrow_left"
+                    android:layout_width="40dp"
+                    android:layout_height="26dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginTop="17dp"
+                    android:background="@mipmap/arrow_left"
+                    style="?android:attr/borderlessButtonStyle">
+                </Button>
+
+
+
+            <!-- star_white -->
+                <Button
+                    android:id="@+id/favorite"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@drawable/star_white"
+                    style="?android:attr/borderlessButtonStyle">
+                </Button>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="30dp"
+            android:layout_width="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="71dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            >
+
+            <!-- Station  -->
+            <TextView
+                android:id="@+id/title_station_a"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/station_b"
+                android:textAppearance="@style/station_b"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <!-- line_parallel_white -->
+            <ImageView
+                android:src="@drawable/line_parellel_white"
+                android:layout_width="30dp"
+                android:layout_height="6dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="85dp"
+                />
+
+            <!-- Station A -->
+            <TextView
+                android:id="@+id/title_station_b"
+                android:layout_width="75dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="125dp"
+                android:layout_alignParentTop="true"
+                android:text="@string/station_a"
+                android:textAppearance="@style/station_a"
+                android:textStyle="bold"
+                android:gravity="center"
+                />
+
+            <!-- line_exchange -->
+            <RelativeLayout
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true">
+                <Button
+                    android:id="@+id/line_exchange"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/button_background">
+                </Button>
+                <ImageView
+                    android:src="@drawable/exchange"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    />
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_below="@+id/gradients_s"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="#F3F3F3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+    <!-- Arrival_Bus -->
+    <RelativeLayout
+        android:id="@+id/arrival_bus"
+        android:layout_height="100dp"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/background"
+        android:elevation="3dp"
+        android:translationZ="10dp"
+        android:translationY="5dp">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="90dp">
+            <!-- Boundary_Line -->
+            <ImageView
+                android:id="@+id/boundary"
+                android:src="@drawable/line_gray_vertical"
+                android:layout_width="4dp"
+                android:layout_height="fill_parent"
+                android:layout_centerInParent="true">
+            </ImageView>
+            <!-- Arrival_time_1 -->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignRight="@+id/boundary"
+                android:layout_marginRight="3dp">
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/button_background">
+                </Button>
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true">
+                    <TextView
+                        android:id="@+id/arrival_time_1"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:text="1 min"
+                        android:textColor="#000000"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center">
+                    </TextView>
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="15dp"
+                        android:text="1 Sta / 320m"
+                        android:textColor="#B2AAAA"
+                        android:textSize="13dp"
+                        android:layout_below="@+id/arrival_time_1"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+            <!-- Arrival_time_2 -->
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignLeft="@+id/boundary"
+                android:layout_marginLeft="3dp">
+                <Button
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/button_background">
+                </Button>
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="50dp"
+                    android:layout_centerInParent="true">
+                    <TextView
+                        android:id="@+id/arrival_time_2"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:text="4 min"
+                        android:textColor="#000000"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        android:layout_centerHorizontal="true"
+                        android:gravity="center">
+                    </TextView>
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="15dp"
+                        android:text="2 Sta / 520m"
+                        android:textColor="#B2AAAA"
+                        android:textSize="13dp"
+                        android:layout_below="@+id/arrival_time_2"
+                        android:layout_marginTop="5dp"
+                        android:layout_centerHorizontal="true">
+                    </TextView>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <!-- Bus_Location_button -->
+        <RelativeLayout
+            android:layout_width="90dp"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true">
+            <Button
+                android:id="@+id/bus_locaiton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/region_black"
+                android:layout_centerInParent="true">
+            </Button>
+        </RelativeLayout>
+    </RelativeLayout>
+    
+    <!-- Bus_Route -->
+    <RelativeLayout
+        android:id="@+id/bus_route"
+        android:layout_marginBottom="300dp"
+        android:layout_below="@+id/arrival_bus"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/background"
+        android:elevation="3dp"
+        android:translationZ="10dp"
+        android:translationY="5dp">
+        <ImageView
+            android:src="@drawable/red_line_b"
+            android:layout_width="20dp"
+            android:layout_height="290dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="10dp"
+            >
+        </ImageView>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40dp">
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="100dp">
+                <Button
+                    android:id="@+id/station_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/button_background"
+                    android:textAllCaps="false"
+                    android:text="Station B"
+                    android:textSize="18dp"
+                    android:textColor="#948C8C"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|left">
+                </Button>
+                <Button
+                    android:id="@+id/station_2"
+                    android:layout_below="@id/station_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/button_background"
+                    android:textAllCaps="false"
+                    android:text="Station F"
+                    android:textSize="18dp"
+                    android:textColor="#948C8C"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|left">
+                </Button>
+                <Button
+                    android:id="@+id/station_3"
+                    android:layout_below="@id/station_2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/button_background"
+                    android:textAllCaps="false"
+                    android:text="Station 2"
+                    android:textSize="18dp"
+                    android:textColor="#948C8C"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|left">
+                </Button>
+                <Button
+                    android:id="@+id/station_4"
+                    android:layout_below="@id/station_3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/button_background"
+                    android:textAllCaps="false"
+                    android:text="Station 1"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|left">
+                </Button>
+                <Button
+                    android:id="@+id/station_5"
+                    android:layout_below="@id/station_4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="68dp"
+                    android:background="@drawable/button_background"
+                    android:textAllCaps="false"
+                    android:text="Station A"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical|left">
+                </Button>
+            </RelativeLayout>
+            <Button
+                android:id="@+id/to_line9"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:background="@drawable/button_line9"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="160dp"
+                android:layout_marginRight="10dp"
+                android:text="9"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                style="?android:attr/borderlessButtonStyle">
+            </Button>
+            <Button
+                android:id="@+id/to_line3"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:background="@drawable/button_line3"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="160dp"
+                android:layout_marginRight="45dp"
+                android:text="3"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                style="?android:attr/borderlessButtonStyle">
+            </Button>
+        </RelativeLayout>
+     </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF">
+        <Button
+            android:id="@+id/mainpage"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15pt"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/home2"
+            style="?android:attr/borderlessButtonStyle">
+        </Button>
+        <Button
+            android:layout_width="26dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/lines2"
+            style="?android:attr/borderlessButtonStyle">
+        </Button>
+        <Button
+            android:layout_width="34dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20pt"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/profile1"
+            style="?android:attr/borderlessButtonStyle">
+        </Button>
+    </RelativeLayout>
+    
+</RelativeLayout>
+
